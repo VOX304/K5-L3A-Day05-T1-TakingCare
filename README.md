@@ -63,7 +63,7 @@ Trình kiểm tra dùng Chrome đã cài ở đường dẫn mặc định Windo
 - Đã chọn **T1, L3A, làm cá nhân** theo xác nhận của người học. Đề gốc yêu cầu nhóm ba người; bài ghi ngoại lệ này rõ ràng.
 - Tác giả ghi `VoCongMinh`, mã `2A202603520` theo tên repo được cung cấp; không đoán dấu. Tên bài **TakingCare**, bàn/zone **cá nhân** do người học chọn. Không có thành viên, phân công hoặc tranh luận nhóm bịa.
 - Chưa có demo trước TA/giảng viên hay ca lạ từ người ngoài; không nhận bonus đó. Không có lời gọi AI thật; không nhận bonus AI.
-- Thư mục này được chuẩn bị để đưa vào **repo GitHub mới, công khai**, tên `K5-L3A-Day05-T1-TakingCare`. Chưa tự nhận đã tạo repo/nộp link.
+- Thư mục này được chuẩn bị để đưa vào **repo GitHub mới, công khai**, tên `K5-L3A-Day05-T1-TakingCare`. Đang chờ tác giả đồng ý công khai tên/mã học viên và bài làm tại địa chỉ mới; chưa tạo repo hay nộp link.
 - Đề gốc đặt hạn L3A là **23:59 ngày 12/11/2026**. Bài đang được chuẩn bị ngày 13/11/2026; không có bằng chứng nộp đúng hạn.
 
 Đây là bài học thiết kế với bối cảnh Hỏi dược sĩ. Không liên kết với Pharmacity, không dùng dữ liệu sức khoẻ thật, không thay thế người có chuyên môn.

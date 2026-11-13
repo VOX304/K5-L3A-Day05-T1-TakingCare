@@ -68,4 +68,6 @@ Không xác nhận AI thật hiểu tin nhắn; không xác nhận chẩn đoán
 
 ## Trạng thái xuất bản
 
-Đang chuẩn bị repo mới `VOX304/K5-L3A-Day05-T1-TakingCare`. Chỉ đổi trạng thái thành đã xuất bản sau khi kiểm tra repo công khai, mã bài đã lên và truy cập không đăng nhập được. Chưa có bằng chứng đã nộp link cho giảng viên.
+Repo dự kiến: `VOX304/K5-L3A-Day05-T1-TakingCare`. Bộ kiểm tra phê duyệt tự động đã chặn thao tác tạo và đăng bài vì chưa có sự đồng ý rõ ràng để công khai tên/mã học viên và các artifact tại địa chỉ này. Đã gửi tác giả câu hỏi xác nhận riêng; chưa đăng dữ liệu ra GitHub.
+
+Chỉ đổi trạng thái thành đã xuất bản sau khi được phép, kiểm tra repo công khai, mã bài đã lên và truy cập không đăng nhập được. Chưa có bằng chứng đã nộp link cho giảng viên. Bản local và bản zip không thay thế yêu cầu URL công khai nếu vẫn giữ yêu cầu này.
