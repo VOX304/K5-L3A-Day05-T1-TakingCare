@@ -2,6 +2,10 @@
 
 Bài thực hành cá nhân lớp **L3A** về **trải nghiệm khi AI sai** và **mức tự chủ theo cái giá khi sai**. Hai màn hình mô phỏng một khách hỏi thuốc và dược sĩ nhận ca, không phải dịch vụ tư vấn y tế.
 
+**Tác giả:** VoCongMinh · **Mã học viên:** 2A202603520 · **Bàn/zone:** cá nhân.
+
+Repo được tổ chức riêng cho bài nộp: `spec.md` và thư mục `prototype/` nằm ngay ở gốc, không kèm tài liệu đề bài hay bản ZIP.
+
 ## Mở bài
 
 1. Mở [prototype/index.html](prototype/index.html) bằng Chrome hoặc Edge. Không cần cài đặt, API key, đăng nhập hay máy chủ.
@@ -52,18 +56,20 @@ npm test
 Kiểm tra nút, hai màn hình, quyền lưu và tạo lại hai ảnh:
 
 ```text
-npm install --ignore-scripts --no-audit --no-fund
+npm ci --ignore-scripts --no-audit --no-fund
 npm run test:browser
 ```
 
 Trình kiểm tra dùng Chrome đã cài ở đường dẫn mặc định Windows. Máy khác đặt biến `CHROME_PATH` trỏ tới trình duyệt Chromium/Chrome tương thích. `playwright-core` chỉ phục vụ kiểm tra, không cần để mở prototype.
 
-## Trạng thái bài nộp
+## Thông tin nộp bài
 
-- Đã chọn **T1, L3A, làm cá nhân** theo xác nhận của người học. Đề gốc yêu cầu nhóm ba người; bài ghi ngoại lệ này rõ ràng.
-- Tác giả ghi `VoCongMinh`, mã `2A202603520` theo tên repo được cung cấp; không đoán dấu. Tên bài **TakingCare**, bàn/zone **cá nhân** do người học chọn. Không có thành viên, phân công hoặc tranh luận nhóm bịa.
-- Chưa có demo trước TA/giảng viên hay ca lạ từ người ngoài; không nhận bonus đó. Không có lời gọi AI thật; không nhận bonus AI.
-- Thư mục này được chuẩn bị để đưa vào **repo GitHub mới, công khai**, tên `K5-L3A-Day05-T1-TakingCare`. Đang chờ tác giả đồng ý công khai tên/mã học viên và bài làm tại địa chỉ mới; chưa tạo repo hay nộp link.
-- Đề gốc đặt hạn L3A là **23:59 ngày 12/11/2026**. Bài đang được chuẩn bị ngày 13/11/2026; không có bằng chứng nộp đúng hạn.
+- **Tên repo:** `K5-L3A-Day05-T1-TakingCare`, theo định dạng `K5-<lớp>-Day05-<track>-<tên nhóm>` của đề.
+- **Cấu trúc bắt buộc:** [spec.md](spec.md) có bảng tác giả ở đầu; [prototype/](prototype/) có mã chạy được, hướng dẫn và [hai ảnh đánh số](prototype/README.md).
+- **Cách chấm:** đọc `spec.md` §1–§7, đối chiếu ảnh và bấm các ca S01/S02/S03 trong prototype. [Bản đối chiếu bằng chứng](docs/verification.md) ghi kết quả kiểm tra và giới hạn.
+- **Cách nộp:** gửi link repo công khai qua kênh giảng viên thông báo; không dùng ZIP thay cho link. Việc nộp qua kênh của lớp do tác giả thực hiện.
+- **Hình thức:** cá nhân theo lựa chọn của tác giả. Đề gốc yêu cầu nhóm ba người; bài ghi đúng hình thức thực tế, không tự nhận đã đáp ứng điều kiện nhóm.
+- **Demo/bonus:** chưa demo với TA/giảng viên và chưa có ca lạ từ người ngoài. Không có lời gọi AI thật; không nhận bonus cho các phần chưa thực hiện.
+- **Thời hạn trong đề:** L3A — 23:59 ngày 12/11/2026. Lịch sử Git không thay thế bằng chứng đã gửi bài qua kênh lớp đúng hạn.
 
 Đây là bài học thiết kế với bối cảnh Hỏi dược sĩ. Không liên kết với Pharmacity, không dùng dữ liệu sức khoẻ thật, không thay thế người có chuyên môn.

@@ -4,11 +4,11 @@
 
 | Họ và tên | Mã học viên | Việc đã làm / trạng thái |
 |---|---|---|
-| `VoCongMinh` — giữ nguyên dạng trong tên repo | `2A202603520` — theo tên repo do người học cung cấp | Bài cá nhân có AI hỗ trợ soạn spec, dựng và kiểm tra prototype; người học cần tự diễn giải trước khi trình bày |
+| VoCongMinh | 2A202603520 | Thực hiện bài cá nhân với AI hỗ trợ phân tích kịch bản, viết spec, dựng và kiểm tra prototype; tự diễn giải quyết định khi trình bày |
 
 **Ngoại lệ đã xác nhận:** người học chọn làm cá nhân. Đề gốc yêu cầu đúng ba người; bài này không tự nhận đã đáp ứng điều kiện nhóm. Các phương án A/B/C bên dưới là tự phản biện, không phải lời của ba thành viên. Chưa demo với TA/giảng viên và chưa có ca lạ do người ngoài đưa.
 
-**Phạm vi dữ liệu:** toàn bộ nhân vật, tình huống, trạng thái dược sĩ, thời hạn và thẻ sản phẩm là dựng. Không có thuốc, liều, giá, tồn kho hoặc giao dịch thật. Tên bài **TakingCare** và bàn/zone **cá nhân** đã được người học xác nhận. Không tự đoán dấu trong họ tên.
+**Phạm vi dữ liệu:** toàn bộ nhân vật, tình huống, trạng thái dược sĩ, thời hạn và thẻ sản phẩm là dựng. Không có thuốc, liều, giá, tồn kho hoặc giao dịch thật. Tên bài **TakingCare**, bàn/zone **cá nhân**. Họ tên giữ dạng không dấu theo thông tin repo được cung cấp.
 
 ## §1. Lát cắt & phạm vi
 
