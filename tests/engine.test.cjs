@@ -85,6 +85,13 @@ test('receiver acceptance is forbidden after timeout and while offline', () => {
   let s = E.create('normal', T); s = send(s, 'ACCEPT', { now: T + E.REVIEW_MS }); assert.notEqual(s.handoff.status, 'accepted');
   s = send(E.create('normal', T), 'ONLINE', { value: false }); s = send(s, 'ACCEPT'); assert.notEqual(s.handoff.status, 'accepted');
 });
+test('going offline after acceptance preserves the received event and blocks new approval or reply', () => {
+  let s = accepted(); const messages = s.messages.length;
+  s = send(s, 'ONLINE', { value: false });
+  assert.equal(s.handoff.status, 'accepted'); assert.equal(E.canApprove(s), false);
+  s = send(s, 'STAFF_REPLY'); assert.equal(s.messages.length, messages);
+  s = send(s, 'APPROVE', { revision: s.revision }); assert.equal(s.candidate.status, 'expired');
+});
 test('a queued transfer is cancellable, an accepted transfer is not falsely undone', () => {
   let s = send(E.create('normal', T), 'CANCEL_TRANSFER'); assert.equal(s.handoff.status, 'cancelled');
   s = send(s, 'TRANSFER'); s = send(s, 'ACCEPT'); s = send(s, 'CANCEL_TRANSFER'); assert.equal(s.handoff.status, 'accepted');

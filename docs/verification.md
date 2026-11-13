@@ -4,8 +4,8 @@
 
 Ngày kiểm tra: **13/11/2026**, múi giờ Việt Nam. Kiểm tra bằng Node.js 24 và Chrome trên máy làm bài.
 
-- **34 kiểm tra logic: PASS**, không thất bại. Chạy `node --test tests/engine.test.cjs` từ thư mục bài làm.
-- **12 lượt kiểm tra tương tác: PASS**, không lỗi JavaScript và không yêu cầu HTTP/HTTPS ra ngoài trong các luồng đã thử. Chạy `node tests/browser.cjs`.
+- **35 kiểm tra logic: PASS**, không thất bại. Chạy `node --test tests/engine.test.cjs` từ thư mục bài làm.
+- **13 lượt kiểm tra tương tác: PASS**, không lỗi JavaScript và không yêu cầu HTTP/HTTPS ra ngoài trong các luồng đã thử. Chạy `node tests/browser.cjs`.
 - Hai ảnh đã được tạo từ trình duyệt chạy thật và xem lại: không tràn nội dung, có số chú thích, trạng thái khẩn/thu hồi và quyền duyệt thể hiện rõ.
 - Kích thước đã kiểm tra tự động: máy tính 1440 × 1100 và điện thoại 390 × 844, không tràn ngang. Không suy rộng thành mọi thiết bị hay kiểm định khả năng tiếp cận đầy đủ.
 - Log tương tác thực tế: [browser-results.json](../prototype/evidence/browser-results.json). Tệp ghi thời điểm UTC; cộng 7 giờ để quy đổi sang giờ Việt Nam.
@@ -59,6 +59,7 @@ Ngày kiểm tra: **13/11/2026**, múi giờ Việt Nam. Kiểm tra bằng Node.
 - Consent từng chỉ bị xoá nếu đã có ghi chú; đã sửa để dữ liệu thay đổi luôn cần đồng ý lại, kể cả khách mới tích ô chưa lưu.
 - Cảnh báo trẻ nhỏ từng dùng câu S01 cho mọi trẻ có dấu hiệu khác; đã giới hạn câu cụ thể cho đúng fixture S01 ban đầu và dùng câu chung không bịa triệu chứng cho các trường hợp khác.
 - Sau quá hạn đã nhận ca nhưng chưa duyệt, cần đường gửi lại: đã có yêu cầu mới và hạn duyệt mới thay vì kẹt hoặc tự mở duyệt.
+- Dược sĩ đã nhận rồi mất trạng thái trực từng bị hiển thị như chưa chuyển được. Đã giữ lại sự kiện đã nhận, nói rõ hiện không có người trực và khoá thao tác duyệt/trả lời mới khi offline.
 
 ## Giới hạn chưa được chứng minh
 

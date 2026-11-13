@@ -61,6 +61,12 @@ async function check(name, task) { await task(); results.push({ name, status: 'P
       await expectText('.suggestion', 'THẺ MINH HOẠ A');
       await page.locator('[data-action="revoke"]:visible').click(); assert.equal(await page.locator('.suggestion').count(), 0);
     });
+    await check('Đã nhận rồi mất người trực: giữ lịch sử đã nhận, khoá duyệt và trả lời', async () => {
+      await open('normal'); await page.click('#tab-staff'); await page.locator('[data-action="accept"]:visible').click();
+      await page.uncheck('#online'); await expectText('#staff', 'Đã nhận · hiện không có người trực');
+      assert.equal(await page.locator('[data-action="approve"]:visible').isEnabled(), false);
+      assert.equal(await page.locator('[data-action="staff-reply"]:visible').isEnabled(), false);
+    });
     await check('Quá hạn thực sự khoá duyệt và cho gửi lại', async () => {
       await open('normal'); await page.click('#tab-staff'); await page.locator('[data-action="accept"]:visible').click();
       await page.click('#expire');

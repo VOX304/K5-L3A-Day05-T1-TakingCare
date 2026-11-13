@@ -153,11 +153,11 @@
     } else if (event.type === 'REVOKE') {
       if (s.candidate) { s.candidate.status = 'withdrawn'; s.withdrawn = true; log(s, 'goi_y_san_pham', 'withdrawn; no ingestion reversal claimed', now); }
     } else if (event.type === 'STAFF_REPLY') {
-      if (s.handoff?.status === 'accepted') append(s, 'staff', 'Dược sĩ mô phỏng cần trao đổi trực tiếp thêm trước khi có đề xuất. Chưa có thuốc, liều hoặc đơn nào được phát hành trong bài học.');
+      if (s.online && s.handoff?.status === 'accepted') append(s, 'staff', 'Dược sĩ mô phỏng cần trao đổi trực tiếp thêm trước khi có đề xuất. Chưa có thuốc, liều hoặc đơn nào được phát hành trong bài học.');
     } else if (event.type === 'ONLINE') {
       s.online = !!event.value;
       if (!s.online) {
-        if (s.handoff && ['queued', 'accepted'].includes(s.handoff.status)) s.handoff.status = 'failed';
+        if (s.handoff?.status === 'queued') s.handoff.status = 'failed';
         if (s.candidate?.status === 'pending') s.candidate.status = 'expired';
       }
       log(s, 'trang_thai_nhan_ca', s.online ? 'online (simulation)' : 'offline (simulation)', now);
