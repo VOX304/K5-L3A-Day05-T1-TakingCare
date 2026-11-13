@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bản mẫu học tập LAB5 T1: giới hạn tự chủ, xử lý khi AI sai, chuyển dược sĩ và đồng ý lưu ghi chú.">
+  <title>TakingCare · LAB5 T1</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="engine.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Đến nội dung chính</a>
+  <header class="site-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">+</span><div><strong>TakingCare</strong><small>Biết giới hạn. Có người tiếp nối.</small></div></div>
+    <div class="header-meta"><span class="lab-label">LAB5 / T1</span><span class="dot-label">Bản mẫu học tập</span></div>
+  </header>
+  <main id="main">
+    <section class="intro">
+      <div><p class="eyebrow">HỎI DƯỢC SĨ · THIẾT KẾ TRẢI NGHIỆM AI</p><h1>Hỗ trợ đúng lúc.<br><span>Không tự quyết thay bạn.</span></h1><p class="intro-copy">Một cuộc trao đổi rõ giới hạn, biết khi nào cần dừng và chuyển người có chuyên môn.</p></div>
+      <aside class="demo-note"><span class="note-icon" aria-hidden="true">i</span><div><strong>AI và dược sĩ đều được mô phỏng</strong><p>Chỉ dùng tình huống dựng. Không gửi dữ liệu ra ngoài, không bán thuốc, không tư vấn cho người thật.</p></div></aside>
+    </section>
+    <section class="demo-toolbar" aria-label="Điều khiển bản mẫu">
+      <div class="case-picker"><label for="case">Tình huống để thử</label><select id="case"></select><button id="reset" class="btn quiet">Bắt đầu lại</button></div>
+      <div class="demo-controls"><label class="check"><input id="annotations" type="checkbox" checked> Chú thích nguyên tắc</label><button id="expire" class="btn quiet" title="Cho thời gian mô phỏng tiến thêm hai phút">Thử quá hạn 2 phút</button></div>
+    </section>
+    <div class="workspace-top"><div class="tabs" role="tablist" aria-label="Hai màn hình của bản mẫu"><button id="tab-customer" role="tab" aria-selected="true" aria-controls="customer" tabindex="0">01 <span>Phía khách</span></button><button id="tab-staff" role="tab" aria-selected="false" aria-controls="staff" tabindex="-1">02 <span>Phía dược sĩ</span></button></div><span id="case-code" class="case-code"></span></div>
+    <section id="customer" role="tabpanel" aria-labelledby="tab-customer" class="workspace"></section>
+    <section id="staff" role="tabpanel" aria-labelledby="tab-staff" class="workspace" hidden></section>
+    <p id="error" role="alert" class="error" hidden></p>
+    <footer><span>TakingCare · L3A · Bài thực hành cá nhân</span><span>Tình huống và chính sách dựng · không liên kết với Pharmacity</span></footer>
+  </main>
+</body>
+</html>

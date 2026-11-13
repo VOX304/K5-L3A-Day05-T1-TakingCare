@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-11-13T10:26:33.791Z",
+  "browser": "157.0.8103.51",
+  "checks": [
+    {
+      "name": "S01: cảnh báo ngay, không cần nhập đủ thông tin hoặc đồng ý lưu",
+      "status": "PASS"
+    },
+    {
+      "name": "S01: chuyển thất bại không làm mất cảnh báo",
+      "status": "PASS"
+    },
+    {
+      "name": "S02: sửa thai kỳ thu hồi gợi ý, thông báo dược sĩ và chặn duyệt",
+      "status": "PASS"
+    },
+    {
+      "name": "S03: đúng người nhận và duyệt mới gửi thẻ",
+      "status": "PASS"
+    },
+    {
+      "name": "Quá hạn thực sự khoá duyệt và cho gửi lại",
+      "status": "PASS"
+    },
+    {
+      "name": "Khách sửa thông tin sau duyệt làm thẻ cũ mất hiệu lực",
+      "status": "PASS"
+    },
+    {
+      "name": "Lưu chỉ sau đồng ý, rút lại xoá thật và reload không giữ ghi chú",
+      "status": "PASS"
+    },
+    {
+      "name": "S05: không có nút bán thuốc kê đơn",
+      "status": "PASS"
+    },
+    {
+      "name": "S06: thiếu nguồn tồn kho được nói rõ",
+      "status": "PASS"
+    },
+    {
+      "name": "Ca lạ: tin có dấu hiệu nguy hiểm chuyển ngay, tin ngoài hiểu biết không bịa",
+      "status": "PASS"
+    },
+    {
+      "name": "Hai màn hình, điều hướng bàn phím và không tràn ngang trên điện thoại",
+      "status": "PASS"
+    },
+    {
+      "name": "Không có lỗi JavaScript hoặc yêu cầu mạng ngoài",
+      "status": "PASS"
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": []
+}

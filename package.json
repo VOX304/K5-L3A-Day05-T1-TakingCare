@@ -1,0 +1,11 @@
+{
+  "name": "lab5-t1-takingcare",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bài thực hành cá nhân LAB5 T1: UX khi AI sai và mức tự chủ",
+  "scripts": {
+    "test": "node --test tests/engine.test.cjs",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "devDependencies": { "playwright-core": "1.65.0" }
+}
