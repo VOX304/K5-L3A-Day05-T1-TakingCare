@@ -43,7 +43,7 @@ Ngày kiểm tra: **13/11/2026**, múi giờ Việt Nam. Kiểm tra bằng Node.
 | Dữ liệu và an toàn T1 | Không thuốc/liều/giao dịch; sản phẩm, trạng thái, tuổi, triệu chứng giả | Có trong phạm vi bản mẫu |
 | Định dạng bài | `spec.md`, `prototype/`, đúng hai ảnh, tài liệu hỗ trợ riêng | Có |
 | Thông tin bài | L3A/T1/TakingCare/cá nhân do người học chọn; tác giả/mã giữ nguyên theo tên repo được cung cấp | Không suy đoán dấu họ tên |
-| Repo mới, công khai, đúng tên | Cần đối chiếu trạng thái GitHub thực tế khi xuất bản | Theo trạng thái xuất bản ở cuối tài liệu |
+| Repo mới, công khai, đúng tên | GitHub xác nhận public, không fork; HTTP không đăng nhập trả 200; `spec.md` và `prototype/` ngay gốc | Đã xác minh ngày 13/11/2026 |
 
 ## Kiểm tra nào chứng minh ba tiêu chí?
 
@@ -69,6 +69,13 @@ Không xác nhận AI thật hiểu tin nhắn; không xác nhận chẩn đoán
 
 ## Trạng thái xuất bản
 
-Đích xuất bản: `VOX304/K5-L3A-Day05-T1-TakingCare`. Tác giả đã yêu cầu hoàn thiện repo và commit/push lên GitHub. Bộ bài sử dụng lịch sử Git độc lập; không fork và không mang lịch sử hay tài liệu đề bài vào repo nộp.
+Repo bài nộp: [VOX304/K5-L3A-Day05-T1-TakingCare](https://github.com/VOX304/K5-L3A-Day05-T1-TakingCare). Đã commit và push theo yêu cầu tác giả; lịch sử Git độc lập, không fork và không mang tài liệu đề bài vào repo nộp.
 
-Trạng thái công khai và mã commit sẽ được xác nhận sau khi push. Nộp link qua kênh giảng viên là bước của tác giả; việc có repo công khai không chứng minh đã gửi bài hay đã demo.
+Đã kiểm tra ngày **13/11/2026**:
+
+- GitHub trả `visibility: PUBLIC`, `isFork: false`.
+- Trang repo và API repo đều trả HTTP **200** qua yêu cầu không có đăng nhập hay header `Authorization`.
+- Gốc repo có `spec.md`, `prototype/`, `README.md`, `docs/`, `tests/` và tệp cài đặt kiểm tra; không có thêm tầng `submission/`, thư mục `tracks/` hay `prototype-sample/` của đề.
+- Mốc nội dung đã kiểm tra và push: `e7ebed30b9f4b2c5b75d953c72ae8428862d21d0`; bản trên GitHub khớp bản local ở mốc này. Các cập nhật sau đó ghi link và bằng chứng xuất bản.
+
+Nộp link qua kênh giảng viên là bước của tác giả; việc có repo công khai không chứng minh đã gửi bài hay đã demo. Không tự nhận đã nộp đúng hạn.

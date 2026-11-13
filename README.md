@@ -4,6 +4,8 @@ Bài thực hành cá nhân lớp **L3A** về **trải nghiệm khi AI sai** v�
 
 **Tác giả:** VoCongMinh · **Mã học viên:** 2A202603520 · **Bàn/zone:** cá nhân.
 
+**Link repo để nộp:** [K5-L3A-Day05-T1-TakingCare](https://github.com/VOX304/K5-L3A-Day05-T1-TakingCare).
+
 Repo được tổ chức riêng cho bài nộp: `spec.md` và thư mục `prototype/` nằm ngay ở gốc, không kèm tài liệu đề bài hay bản ZIP.
 
 ## Mở bài
@@ -65,6 +67,7 @@ Trình kiểm tra dùng Chrome đã cài ở đường dẫn mặc định Windo
 ## Thông tin nộp bài
 
 - **Tên repo:** `K5-L3A-Day05-T1-TakingCare`, theo định dạng `K5-<lớp>-Day05-<track>-<tên nhóm>` của đề.
+- **Truy cập:** repo mới, công khai, không phải fork; đã kiểm tra mở được khi không đăng nhập ngày 13/11/2026.
 - **Cấu trúc bắt buộc:** [spec.md](spec.md) có bảng tác giả ở đầu; [prototype/](prototype/) có mã chạy được, hướng dẫn và [hai ảnh đánh số](prototype/README.md).
 - **Cách chấm:** đọc `spec.md` §1–§7, đối chiếu ảnh và bấm các ca S01/S02/S03 trong prototype. [Bản đối chiếu bằng chứng](docs/verification.md) ghi kết quả kiểm tra và giới hạn.
 - **Cách nộp:** gửi link repo công khai qua kênh giảng viên thông báo; không dùng ZIP thay cho link. Việc nộp qua kênh của lớp do tác giả thực hiện.
